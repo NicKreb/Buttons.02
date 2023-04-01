@@ -1,1 +1,29 @@
 /* here will reside the CSS portion of the project, primarily used for the first button*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+#clock-icon {
+  position: relative;
+  font-size: 10em;
+  color: #874efe;
+}
+
+#clock-icon:hover{
+  color: #82E0AA;
+}
+
+.time-display {
+  position: relative;
+  color: white;
+}
