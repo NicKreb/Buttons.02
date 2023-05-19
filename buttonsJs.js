@@ -2,3 +2,6 @@
 var datetime = new Date();
 console.log(datetime);
 document.getElementById("time").textContent = datetime;
+
+//create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
+//and the newest display on!
