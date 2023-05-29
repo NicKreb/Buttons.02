@@ -13,9 +13,12 @@ body {
   background: #000;
 }
 
-#clock-icon {
+.button {
   position: relative;
   font-size: 10em;
+}
+
+#clock-icon {
   color: #874efe;
 }
 
@@ -24,8 +27,6 @@ body {
 }
 
 #smile-icon {
-  position: relative;
-  font-size: 10em;
   color: gold;
 }
 
@@ -34,8 +35,6 @@ body {
 }
 
 #color-icon {
-  position: relative;
-  font-size: 10em;
   color: #FF6AFA;
 }
 
@@ -44,8 +43,6 @@ body {
 }
 
 #applepie-icon {
-  position: relative;
-  font-size: 10em;
   color: #CB242C;
 }
 
@@ -54,8 +51,6 @@ body {
 }
 
 #yinyang-icon {
-  position: relative;
-  font-size: 10em;
   color: white;
 }
 
