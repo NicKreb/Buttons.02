@@ -23,7 +23,49 @@ body {
   color: #82E0AA;
 }
 
-.time-display {
+#smile-icon {
   position: relative;
+  font-size: 10em;
+  color: gold;
+}
+
+#smile-icon:hover{
+  color: #33C4FF;
+}
+
+#color-icon {
+  position: relative;
+  font-size: 10em;
+  color: #FF6AFA;
+}
+
+#color-icon:hover{
+  color: #23AF5E;
+}
+
+#applepie-icon {
+  position: relative;
+  font-size: 10em;
+  color: #CB242C;
+}
+
+#applepie-icon:hover{
+  color: gold;
+}
+
+#yinyang-icon {
+  position: relative;
+  font-size: 10em;
   color: white;
+}
+
+#yinyang-icon:hover {
+  color: darkgrey;
+}
+
+.displayBox {
+  position: relative;
+  display: flex;
+  color: white;
+  border: solid white 2px;
 }
