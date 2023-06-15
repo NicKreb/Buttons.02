@@ -1,4 +1,3 @@
-/* here will reside the CSS portion of the project, primarily used for the first button*/
 *{
   margin: 0;
   padding: 0;
@@ -18,6 +17,7 @@ body {
   font-size: 10em;
 }
 
+/* table values to align items and box them in similar to a calculator */
 
 table {
   border-radius: 2%;
@@ -30,6 +30,9 @@ table {
    justify-content: center;
    align-items: center;
     }
+
+/* Button colors and hover colors below */
+
 #color-icon {
    color: white;
 }
@@ -84,6 +87,7 @@ table {
   color: darkgrey;
 }
 
+/* display box for the button results */
 .displayBox {
   position: relative;
   display: flex;
