@@ -18,6 +18,40 @@ body {
   font-size: 10em;
 }
 
+
+table {
+  border-radius: 2%;
+  border: solid white 2px;
+  width: 40%
+}
+
+ td{
+   display: relative;
+   justify-content: center;
+   align-items: center;
+    }
+#color-icon {
+   color: white;
+}
+
+#color-icon:hover {
+  background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#clear-icon {
+  color: #FF6AFA;
+}
+
+#clear-icon:hover{
+  color: black;
+}
+
 #clock-icon {
   color: #874efe;
 }
@@ -32,14 +66,6 @@ body {
 
 #smile-icon:hover{
   color: #33C4FF;
-}
-
-#color-icon {
-  color: #FF6AFA;
-}
-
-#color-icon:hover{
-  color: #23AF5E;
 }
 
 #applepie-icon {
