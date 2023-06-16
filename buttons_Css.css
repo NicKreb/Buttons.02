@@ -12,6 +12,8 @@ body {
   background: #000;
 }
 
+/* table values */
+
 table {
   border-radius: 2%;
   border: solid white 2px;
@@ -24,6 +26,7 @@ td{
    padding: 25px;
    }
 
+/* button values, colors, hover colors, and placements */
 
 .button {
   font-size: 10em;
@@ -83,6 +86,8 @@ td{
 #yinyang-icon:hover {
   color: darkgrey;
 }
+
+/* display box values */
 
 .displayBox {
   color: white;
