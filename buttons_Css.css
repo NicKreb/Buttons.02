@@ -12,26 +12,39 @@ body {
   background: #000;
 }
 
-.button {
-  position: relative;
-  font-size: 10em;
-}
-
-/* table values to align items and box them in similar to a calculator */
-
 table {
   border-radius: 2%;
   border: solid white 2px;
-  width: 40%
+  width: 40%;
+  background: #717070;
 }
 
- td{
-   display: relative;
-   justify-content: center;
-   align-items: center;
-    }
+td{
+   position: relative;
+   padding: 25px;
+   }
 
-/* Button colors and hover colors below */
+
+.button {
+  font-size: 10em;
+  text-shadow: 0 0 10px #000;
+}
+
+#clock-icon {
+  color: #874efe;
+}
+
+#clock-icon:hover{
+  color: #82E0AA;
+}
+
+#smile-icon {
+  color: gold;
+}
+
+#smile-icon:hover{
+  color: #33C4FF;
+}
 
 #color-icon {
    color: white;
@@ -52,23 +65,7 @@ table {
 }
 
 #clear-icon:hover{
-  color: black;
-}
-
-#clock-icon {
-  color: #874efe;
-}
-
-#clock-icon:hover{
-  color: #82E0AA;
-}
-
-#smile-icon {
-  color: gold;
-}
-
-#smile-icon:hover{
-  color: #33C4FF;
+  color: #717070;
 }
 
 #applepie-icon {
@@ -87,10 +84,8 @@ table {
   color: darkgrey;
 }
 
-/* display box for the button results */
 .displayBox {
-  position: relative;
-  display: flex;
   color: white;
   border: solid white 2px;
+  background: black;
 }
