@@ -13,7 +13,7 @@ if (x = 'Cl') {
 } else if (x = 'Pie') {
   displayVar = "3.14"
 } else if (x = 'Er') {
-  displayVar = "CLEARED"
+  displayVar = "Click a Button!"
 } else {
   return displayVar; 
 }
