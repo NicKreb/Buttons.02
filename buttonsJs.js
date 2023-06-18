@@ -1,19 +1,24 @@
 /* here will reside the JS for the project, primarily filled with the functions of the 2nd and 3rd buttons! */
-var datetime = new Date();
-console.log(datetime);
-document.getElementById("time").textContent = datetime;
+var dateTime = new Date();
 
-var displayVar = "blank";
+x = '';
 
-function displayBoxResults(displayVar) {
+function displayVarValue(x){
+let displayVar = ""
   
-  if (displayVar = "blank") {
-    document.getElementById("displayBox").innerHTML = "<h1> Display Results Here! </h1>";
-  } else if (displayVar = "time") {
-    document.getElementById("displayBox").innerHTML = "<h1>" + {dateTime} + "</h1>";
-  } else if (displayVar = "Pie") {
-    document.getElementById("displayBox").innerHTML = "<h1> 3.14 </h1>"
-  }
+if (x = 'Cl') {
+  displayVar = dateTime
+} else if (x = 'Sm') {
+  displayVar = "You Can Do Anything!"
+} else if (x = 'Pie') {
+  displayVar = "3.14"
+} else if (x = 'Er') {
+  displayVar = "CLEARED"
+} else {
+  return displayVar; 
+}
 };
+
+console.log(displayVarValue(x));
 //create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
 //and the newest display on!
