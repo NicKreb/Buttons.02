@@ -10,7 +10,7 @@ document.getElementById("color-icon").onclick = function() {changeBackground()};
 
 document.getElementById("clear-icon").onclick = function() {defaultState()};
 
-tasteTheRainbow = ["red", "orange", "yellow", "green", "blue", "purple", "black"]
+tasteTheRainbow = ["red", "orange", "yellow", "green", "blue", "purple"]
 
 function tellTime() {
   document.getElementById("clickaButton").innerHTML = dateTime;
