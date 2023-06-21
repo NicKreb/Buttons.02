@@ -6,11 +6,13 @@ document.getElementById("smile-icon").onclick = function() {smileMotherFucker()}
 document.getElementById("applepie-icon").onclick = function() {pi()};
 document.getElementById("color-icon").onclick = function() {changeBackground()};
 
-//document.getElementById("yinyang-icon").onclick=function() {happyToSad()};
-
 document.getElementById("clear-icon").onclick = function() {defaultState()};
 
 tasteTheRainbow = ["red", "orange", "yellow", "green", "blue", "purple"]
+
+document.getElementById("yinyang-icon").onmousedown = function() {shockedFace()};
+
+document.getElementById("yinyang-icon").onmouseup = function() {faceSwap()};
 
 function tellTime() {
   document.getElementById("clickaButton").innerHTML = dateTime;
@@ -28,14 +30,27 @@ function changeBackground(color) {
    document.body.style.background = tasteTheRainbow[Math.floor(Math.random() * tasteTheRainbow.length)]
 };
 
-function defaultSate() {
+function defaultState() {
   document.getElementById("clickaButton").innerHTML = "CLICK SOMETHING";
+  document.getElementById("face-icon").innerHTML = '<i align="center" id="smile-icon" class="button fa-solid fa-face-smile" value="1"></i>';
   document.body.style.background = "black";
 };
 
-// function happyToSad() {
-//   document.getElementById("clickaButton").innerHTML =;
-// };
+$(function() {
+  $('#yinyang-icon').hover(function() {
+    $('#smile-icon').css('color', '#FF842E');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#smile-icon').css('color', 'yellow');
+  });
+});
 
+function shockedFace() {
+  document.getElementById("face-icon").innerHTML = "<i align='center' class='button fa-solid fa-face-surprise' style='color:#FF842E'></i>" ;
+};
+
+function faceSwap() {
+  document.getElementById("face-icon").innerHTML = "<i align='center' id='sad-icon' class='button fa-solid fa-face-sad-tear' value='2'></i>"
+};
 //create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
 //and the newest display on!
