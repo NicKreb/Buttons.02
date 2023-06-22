@@ -40,10 +40,18 @@ $(function() {
   $('#yinyang-icon').hover(function() {
     $('#smile-icon').css('color', '#FF842E');
   }, function() {
-    // on mouseout, reset the background colour
     $('#smile-icon').css('color', 'yellow');
   });
 });
+
+$(function() {
+  $('#smile-icon').hover(function() {
+    $('#smile-icon').css('color', '#33C4FF');
+  }, function() {
+    $('#smile-icon').css('color', 'gold');
+  });
+});
+
 
 function shockedFace() {
   document.getElementById("face-icon").innerHTML = "<i align='center' class='button fa-solid fa-face-surprise' style='color:#FF842E'></i>" ;
