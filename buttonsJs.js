@@ -54,3 +54,17 @@ function faceSwap() {
 };
 //create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
 //and the newest display on!
+
+//potential solutions:
+//$(document).on('mouseover mouseout', '.dosomething', function(){
+    // what you want to happen when mouseover and mouseout 
+    // occurs on elements that match '.dosomething'
+//});
+
+//$('.buttons').on('click', 'button', function(){
+    // do something here
+//});
+
+//would apply to: <div class="buttons">
+//    <!-- <button>s that are generated dynamically and added here -->
+// </div>
