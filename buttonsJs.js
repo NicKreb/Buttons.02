@@ -1,6 +1,7 @@
 /* here will reside the JS for the project, primarily filled with the functions of the 2nd and 3rd buttons! */
 var dateTime = new Date();
 
+// buttons below here:
 document.getElementById("clock-icon").onclick = function() {tellTime()};
 document.getElementById("smile-icon").onclick = function() {smileMotherFucker()};
 document.getElementById("applepie-icon").onclick = function() {pi()};
@@ -14,6 +15,7 @@ document.getElementById("yinyang-icon").onmousedown = function() {shockedFace()}
 
 document.getElementById("yinyang-icon").onmouseup = function() {faceSwap()};
 
+//onClick functions below here:
 function tellTime() {
   document.getElementById("clickaButton").innerHTML = dateTime;
 }
@@ -52,7 +54,6 @@ $(function() {
   });
 });
 
-
 function shockedFace() {
   document.getElementById("face-icon").innerHTML = "<i align='center' class='button fa-solid fa-face-surprise' style='color:#FF842E'></i>" ;
 };
@@ -60,6 +61,7 @@ function shockedFace() {
 function faceSwap() {
   document.getElementById("face-icon").innerHTML = "<i align='center' id='sad-icon' class='button fa-solid fa-face-sad-tear' value='2'></i>"
 };
+
 //create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
 //and the newest display on!
 
