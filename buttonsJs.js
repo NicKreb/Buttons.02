@@ -33,16 +33,18 @@ function changeBackground(color) {
 };
 
 function defaultState() {
-  document.getElementById("clickaButton").innerHTML = "CLICK SOMETHING";
-  document.getElementById("face-icon").innerHTML = '<i align="center" id="smile-icon" class="button fa-solid fa-face-smile" value="1"></i>';
-  document.body.style.background = "black";
+   document.getElementById("clickaButton").innerHTML = "CLICK SOMETHING";
+   document.getElementById("face-icon").innerHTML = '<i align="center" id="smile-icon" class="button fa-solid fa-face-smile" value="1"></i>';
+   document.body.style.background = "black";
 };
+
+//Yinyang, and face button functions below
 
 $(function() {
   $('#yinyang-icon').hover(function() {
     $('#smile-icon').css('color', '#FF842E');
   }, function() {
-    $('#smile-icon').css('color', 'yellow');
+    $('#smile-icon').css('color', 'gold');
   });
 });
 
@@ -62,19 +64,16 @@ function faceSwap() {
   document.getElementById("face-icon").innerHTML = "<i align='center' id='sad-icon' class='button fa-solid fa-face-sad-tear' value='2'></i>"
 };
 
-//create a conditional function where the display value changes for each button, and if one button is displaying, then pressing another one will switch the current display off
-//and the newest display on!
+function hasClass(elem, className) {
+  return elem.classList.contains(className);
+}
 
-//potential solutions:
-//$(document).on('mouseover mouseout', '.dosomething', function(){
-    // what you want to happen when mouseover and mouseout 
-    // occurs on elements that match '.dosomething'
-//});
-
-//$('.buttons').on('click', 'button', function(){
-    // do something here
-//});
-
-//would apply to: <div class="buttons">
-//    <!-- <button>s that are generated dynamically and added here -->
-// </div>
+document.addEventListener('click', function (e) {
+    if (hasClass(e.target, 'fa-face-smile')) {
+       document.getElementById("clickaButton").innerHTML = "YOU ARE DOING AMAZING!";
+        // Do your thing
+    } else if (hasClass(e.target, 'fa-face-sad-tear')) {
+        document.getElementById("clickaButton").innerHTML = "Why did you do this to me?"
+        // Do your other thing
+    }
+}, false);
