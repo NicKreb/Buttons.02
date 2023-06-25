@@ -1,7 +1,6 @@
 /* here will reside the JS for the project, primarily filled with the functions of the 2nd and 3rd buttons! */
 var dateTime = new Date();
 
-// buttons below here:
 document.getElementById("clock-icon").onclick = function() {tellTime()};
 document.getElementById("smile-icon").onclick = function() {smileMotherFucker()};
 document.getElementById("applepie-icon").onclick = function() {pi()};
@@ -15,13 +14,8 @@ document.getElementById("yinyang-icon").onmousedown = function() {shockedFace()}
 
 document.getElementById("yinyang-icon").onmouseup = function() {faceSwap()};
 
-//onClick functions below here:
 function tellTime() {
   document.getElementById("clickaButton").innerHTML = dateTime;
-}
-
-function smileMotherFucker() {
-  document.getElementById("clickaButton").innerHTML = "YOU ARE DOING AMAZING!";
 }
 
 function pi() {
@@ -42,17 +36,17 @@ function defaultState() {
 
 $(function() {
   $('#yinyang-icon').hover(function() {
-    $('#smile-icon').css('color', '#FF842E');
+    $('.fa-face-smile').css('color', '#FF842E');
   }, function() {
-    $('#smile-icon').css('color', 'gold');
+    $('.fa-face-smile').css('color', 'gold');
   });
 });
 
 $(function() {
-  $('#smile-icon').hover(function() {
-    $('#smile-icon').css('color', '#33C4FF');
+  $('.fa-face-smile').hover(function() {
+    $('.fa-face-smile').css('color', '#33C4FF');
   }, function() {
-    $('#smile-icon').css('color', 'gold');
+    $('.fa-face-smile').css('color', 'gold');
   });
 });
 
@@ -71,9 +65,7 @@ function hasClass(elem, className) {
 document.addEventListener('click', function (e) {
     if (hasClass(e.target, 'fa-face-smile')) {
        document.getElementById("clickaButton").innerHTML = "YOU ARE DOING AMAZING!";
-        // Do your thing
     } else if (hasClass(e.target, 'fa-face-sad-tear')) {
         document.getElementById("clickaButton").innerHTML = "Why did you do this to me?"
-        // Do your other thing
     }
 }, false);
