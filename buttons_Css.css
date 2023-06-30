@@ -12,8 +12,6 @@ body {
   background: #000;
 }
 
-/* table values */
-
 table {
   border-radius: 2%;
   border: solid white 2px;
@@ -26,18 +24,16 @@ td{
    padding: 25px;
    }
 
-.displayBox {
-  height: 60px;
-  text-align: center;
-  font-size: 20px;
-}
-
-
-/* button values, colors, hover colors, and placements */
 
 .button {
   font-size: 10em;
   text-shadow: 0 0 10px #000;
+}
+
+.displayBox {
+  height: 40px;
+  text-align: center;
+  font-size: 24px;
 }
 
 #clock-icon {
@@ -46,6 +42,14 @@ td{
 
 #clock-icon:hover{
   color: #82E0AA;
+}
+
+#yinyang-icon {
+  color: white;
+}
+
+#yinyang-icon:hover {
+  color: darkgrey;
 }
 
 #smile-icon {
@@ -82,22 +86,16 @@ td{
   color: gold;
 }
 
-#yinyang-icon {
-  color: white;
-}
-
-#yinyang-icon:hover {
-  color: darkgrey;
-}
-
-/* display box values */
-
 .displayBox {
   color: white;
   border: solid white 2px;
   background: black;
 }
 
-/* .sadFace {
-  
-} */
+#sad-icon {
+  color: #4AA4EF;
+}
+
+#sad-icon:hover {
+  color: #954AEF;
+}
