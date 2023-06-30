@@ -28,7 +28,7 @@ function changeBackground(color) {
 
 function defaultState() {
    document.getElementById("clickaButton").innerHTML = "CLICK SOMETHING";
-   document.getElementById("face-icon").innerHTML = '<i align="center" id="smile-icon" class="button fa-solid fa-face-smile" value="1"></i>';
+   document.getElementById("face-icon").innerHTML = "<i align='center' id='smile-icon' class='button fa-solid fa-face-smile'></i>";
    document.body.style.background = "black";
 };
 
